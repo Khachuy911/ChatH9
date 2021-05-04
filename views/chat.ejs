@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat H9</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="xuli.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="giaodiendk">
+        <h1>Welcome To Chat H9</h1>
+          <div>Nhập tên bạn</div>
+          <input type="text" id="userName" />
+          <input type="button" id="btnLogin" value="Đăng nhập" onclick="dangNhap()" />
+          <div id="infor">
+            <h3>Có thể bạn chưa biết: </h3>
+            <p>-Chat H9 là một trang web chat ẩn danh, bạn sẽ không bị lộ bất cứ thông tin nào khi chat trên Chat H9</p>
+            <p>-Chat H9 đang trong quá trình phát triển, xây dựng các chức năng chat nhóm,chat riêng tư phục vụ yêu cầu người dùng</p>   
+          </div>
+          <h4>Mọi thông tin liên hệ</h4>
+          <p>Facebook: Nguyễn Khắc Huy - Phone: 0981987832</p>
+        </div>
+      
+      <div id="chat">
+        <h1 id="tentrang">Chat H9</h1>
+        <div id="boxOnline">
+          <div id="nguoiTrucTuyen">ONLINE</div>
+          <div id="tenNguoiOn"></div>
+        </div>
+        <div id="giaoDienChinh">
+          <div id="tieuDe">
+            <span id="tenNguoiDung"></span>
+            <input type="button" id="btnout" value="Thoát" onclick="logout()" />
+          </div>
+          <div id="hopDungThu"></div>
+          <div id="hopNhap">
+            <input id="msg" type="text" />
+            <input type="button" id="send" onclick="send()" value="Gửi" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

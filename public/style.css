@@ -1,0 +1,111 @@
+body{
+	height: 100%;
+  width: 100%;
+	background-color:#F4F1EF ;
+}
+#wrapper {
+  height: 100%;
+  width: 100%;
+}
+/*  */
+#giaodiendk {
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  background-color: #f36bfc;
+	margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 30px;
+}
+#userName {
+	text-align: center;
+  width: 90%;
+  height: 30px;
+}
+#btnLogin{
+	border: 1px solid black;
+	background-color: blanchedalmond;
+	color: black;
+	padding: 5px;
+	margin-top:10px;
+}
+#btnout{
+	border: 1px solid black;
+	background-color: blanchedalmond;
+	color: black;
+}
+#btnLogin:hover,#send:hover,#btnout:hover{
+	background-color: black;
+	color: white;
+}
+#infor{
+	text-align: left;
+}
+
+/*  */
+#tentrang{
+	color: #f36bfc;
+}
+#chat {
+  width: 100%;
+  height: 300px;
+}
+#boxOnline {
+  width: 29%;
+  height: 300px;
+  background-color: #bbf8fb;
+  float: left;
+  text-align: center;
+	box-shadow: 5px 3px 3px 3px black;
+}
+
+#giaoDienChinh {
+  width: 69%;
+  height: 600px;
+  background-color: #bbc7fb;
+  float: right;
+	border:2px solid black;
+}
+#tieuDe {
+  width: 100%;
+  height: 20px;
+  text-align: right;
+  border-bottom:2px solid black;
+
+}
+#msg{
+	width:50%;
+	height:30px;
+}
+#send{
+	width:50px;
+	height:35px;
+	border: 1px solid black;
+	background-color: blanchedalmond;
+	color: black;
+}
+#hopNhap{
+	margin-top:2px;
+}
+#nguoiTrucTuyen {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  border: 2px solid black;
+	font-size: 16px;
+	font-weight: bold;
+}
+#tenNguoiDung{
+  margin-right:5px;
+}
+#hopDungThu,
+#tenNguoiOn {
+  display: block;
+  overflow: auto;
+  word-wrap: break-word;
+  width: 100%;
+  height: 580px;
+}
